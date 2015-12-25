@@ -19,7 +19,7 @@ defmodule PetObituary.Mixfile do
   def application do
     [mod: {PetObituary, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :httpoison, :hound]]
   end
 
   # Specifies which paths to compile per environment.
@@ -30,13 +30,18 @@ defmodule PetObituary.Mixfile do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [{:phoenix, "~> 1.1.0"},
-     {:phoenix_ecto, "~> 2.0"},
-     {:postgrex, ">= 0.0.0"},
-     {:phoenix_html, "~> 2.3"},
-     {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+    [
+      {:phoenix, "~> 1.1.0"},
+      {:phoenix_ecto, "~> 2.0"},
+      {:postgrex, ">= 0.0.0"},
+      {:phoenix_html, "~> 2.3"},
+      {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:gettext, "~> 0.9"},
+      {:cowboy, "~> 1.0"},
+      {:httpoison, "~> 0.8.0"},
+      {:floki, "~> 0.7"},
+      {:hound, "~> 0.7.4"}
+    ]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
