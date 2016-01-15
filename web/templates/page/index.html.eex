@@ -1,3 +1,18 @@
+<div class="col-xs-10 col-xs-offset-1 page-content">
+  <h3>
+    <span>SPLURTY No. 12</span>
+    You know <u>you need to learn Elixir</u> because...
+  </h3>
+  <h1>
+    "He said it."
+  </h1>
+
+  <h2 class="text-right">
+    - some guy
+  </h2>
+
+</div>
+
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}", name: "Pet Obituary!" %></h2>
   <p class="lead">Heartfelt biographies of beloved animals.</p>

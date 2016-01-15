@@ -7,29 +7,55 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello PetObituary!</title>
+    <title>Pet Necrology</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
+  <body class="Site">
+
+      <header>
+        <div class="col-xs-6">
+          <div class="circle">
+            <br />
+            Pet
+            <br />
+            Necro
+          </div>
+        </div>
+
+        <div class="col-xs-6 text-right">
+          <div id="header-links">
+            <a href="#">Newsletter</a>
+          </div>
+        </div>
       </header>
+      <hr class="clear col-xs-12"/>
+
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <main role="main">
+      <main class="Site-content" role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    </div> <!-- /container -->
+      <footer>
+        <div class="col-xs-6">
+          <a href="#">
+            Obituaries for animals that have passed away
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="http://elixir-lang.org">
+            <img src="/images/elixir_logo.png"/>
+          </a>
+          <a href="http://www.phoenixframework.org/">
+            <img src="/images/phoenix_logo.png" />
+          </a>
+        </div>
+      </footer>
+
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
