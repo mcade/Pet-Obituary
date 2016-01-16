@@ -47,12 +47,14 @@ header {
 
 #header-links {
   margin-top:20px;
-  margin-right:20px;
 }
 #header-links a {
   color:black;
-  font-weight:700;
-  font-size: 40px;
+  font-weight:400;
+  font-size: 20px;
+}
+#header-links a img {
+  margin-left: 3px;
 }
 
 #header-links a:hover {
@@ -130,7 +132,19 @@ h1 {
 	padding: 30px 15px;
 }
 
-/* Responsive: Portrait tablets and up */
+.page-content h1 {
+	text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 60px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 
 }

@@ -26,11 +26,13 @@
 
         <div class="col-xs-6 text-right">
           <div id="header-links">
-            <a href="#">Newsletter</a>
+            <a href="#">
+              coming soon to
+              <img src="/images/ios_and_android.png" />
+            </a>
           </div>
         </div>
       </header>
-      <hr class="clear col-xs-12"/>
 
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
