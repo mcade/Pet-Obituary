@@ -43,18 +43,48 @@
       </main>
 
       <footer>
-        <div class="col-xs-6">
-          <a href="#">
-            Obituaries for animals that have passed away
-          </a>
-        </div>
-        <div class="col-xs-6">
-          <a href="http://elixir-lang.org">
-            <img src="/images/elixir_logo.png"/>
-          </a>
-          <a href="http://www.phoenixframework.org/">
-            <img src="/images/phoenix_logo.png" />
-          </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6 footer-links">
+              <div class="row">
+                <div class="col-xs-4">
+                  <p>About</p>
+                  <ul>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4">
+                  <p>Social</p>
+                  <ul>
+                    <li><a href="https://www.facebook.com/pages/Pot-Shop-Subscription-Box/1465285780448199" target="blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/potshopbox" target="blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/potshopbox" target="blank">Instagram</a></li>
+                    <li><a href="https://www.google.com/+Potshopbox420" target="blank">Google+</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4">
+                  <p>Support</p>
+                  <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-pull-6 contact-info">
+              <h4>Contact</h4>
+              <p>
+                Pet Necrology Inc.<br>
+                92 Lenora St<br>
+                Seattle, WA 98121<br>
+              </p>
+              <p>
+                Licensed veterinarians: <a href="mailto:vets@petnecrology.com?Subject=Vet" target="_top">vets@petnecrology.com</a></br>
+                For all other inquiries: <a href="mailto:info@petnecrology.com?Subject=Hello" target="_top">info@petnecrology.com</a>
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
 

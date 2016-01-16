@@ -13,48 +13,17 @@
 
 </div>
 
+<div class="col-sm-12 email-section">
+  <h2>
+    Where to next?
+  </h2>
+  <p>
+    Get notified about the release of Pet Necrology on the app store!
+  </p>
 
-<div class="prelaunch-fp">
-  <h1>The Pot Shop Subscription Box Is Coming To Seattle!</h1>
-  <p>The world's first recreational marijuana subscription box</p>
-  
-  <div class="clock-container">
-    <div class="clock"></div>
-  </div>
-  <div class="container presub-signup">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>Due to ongoing legislation we've decided to close down shop. However, we've partnered with <a href="https://madedibles.com">Mad Edibles</a> to keep the mission alive of discovering great new edibles!</p>
-      </div>
-    </div>
-  </div>
-  <div class="container presub-post-signup">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h1>Thanks for connecting with us!</h1>
-        <p>
-          You'll be amongst the first to know when we begin taking preorders for our launch. 
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-sm-offset-4">
-        <div class="share-url">
-          <ul class="social-share-btn-list">
-            <li><a href="https://www.facebook.com/dialog/feed?app_id=1650339195179921&link=http%3A%2F%2Fpotshopbox.com%2F&picture=http://i.imgur.com/IesiO6F.png&name=The%20World%27s%20First%20Recreational%20Cannabis%20Subscription%20Box%20-%20The%20Pot%20Shop%20Box%20Is%20Coming%20To%20Seattle!&caption=Preorders%20for%20our%20launch%20in%20two%20months%20will%20begin%20in%20August.%20Join%20our%20mailing%20list%20to%20get%20notified.&redirect_uri=http%3A%2F%2Fpotshopbox.com%2F" target="_blank"><img src="https://639hbu2cua27m1kq69uz86f9o.launchrock.com/assets/lr-site/media/images/social-icons/facebook.png"></a></li>
-            <li><a href="https://twitter.com/share?url=http%3A%2F%2Fpotshopbox.com%2F&text=The%20World%27s%20First%20Recreational%20Cannabis%20Subscription%20Box%20-%20The%20Pot%20Shop%20Box%20Is%20Coming%20To%20Seattle!&hashtags=cannabis%2CSeattle" target="_blank"><img src="https://639hbu2cua27m1kq69uz86f9o.launchrock.com/assets/lr-site/media/images/social-icons/twitter.png"></a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?url=http%3A%2F%2Fpotshopbox.com%2F&title=The%20World%27s%20First%20Recreational%20Cannabis%20Subscription%20Box%20-%20The%20Pot%20Shop%20Box%20Is%20Coming%20To%20Seattle!" target="_blank"><img src="https://639hbu2cua27m1kq69uz86f9o.launchrock.com/assets/lr-site/media/images/social-icons/linkedin.png"></a></li>
-            <li><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fpotshopbox.com%2F&name=The%20World%27s%20First%20Recreational%20Cannabis%20Subscription%20Box%20-%20The%20Pot%20Shop%20Box%20Is%20Coming%20To%20Seattle!&description=Preorders%20for%20our%20launch%20in%20two%20months%20will%20begin%20in%20August.%20Join%20our%20mailing%20list%20to%20get%20notified." target="_blank"><img src="https://639hbu2cua27m1kq69uz86f9o.launchrock.com/assets/lr-site/media/images/social-icons/tumblr.png"></a></li>
-            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fpotshopbox.com%2F" target="_blank"><img src="https://639hbu2cua27m1kq69uz86f9o.launchrock.com/assets/lr-site/media/images/social-icons/google-plus.png"></a></li>
-          </ul>
-          <p>Or share this URL:</p>
-          <input type="text" value="http://potshopbox.com">
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  <%= text_input :user, :name, value: "This is a prepopulated value" %>
 </div>
+
 
 
 
