@@ -18,8 +18,8 @@ form.link, form.button {
 body {
 	font-family: 'Roboto Slab', serif;
 
-  background-image: url(http://visualhunt.com/photos/xl/2/the-watching-dog.jpg);
-  background-position: center center;
+  background-image: url("/images/watching_dog_bg.jpg");
+  background-position: 25% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -150,7 +150,7 @@ h1 {
 	text-align: center;
 }
 
-.email-section {
+.features-section {
 	text-align: center;
 	background-color: #dedfdf;
 	padding: 60px 0;
@@ -160,9 +160,25 @@ h1 {
   box-shadow: 0px 0px 5px -2px black;
 }
 
-.email-section p {
+.features-section p {
 	font-weight: 300;
 	font-size: 20px;
+}
+
+.email-section {
+	margin: 100px 0 300px 0;
+	padding: 0;
+}
+
+.email-section .email-form {
+	background: rgba(35, 206, 235, 0.5);
+  padding: 5px 5px 25px;
+  text-align: center;
+  color: #191919;
+  -webkit-box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
+  border-radius: 2px 0 0 2px;
 }
 
 @media screen and (max-width: 900px) {

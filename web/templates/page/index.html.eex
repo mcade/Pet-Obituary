@@ -13,7 +13,7 @@
 
 </div>
 
-<div class="col-sm-12 email-section">
+<div class="col-sm-12 features-section">
   <h2>
     Where to next?
   </h2>
@@ -22,6 +22,19 @@
   </p>
 
   <%= text_input :user, :name, value: "This is a prepopulated value" %>
+</div>
+
+<div class="col-xs-6 col-xs-push-6 email-section">
+  <div class="email-form">
+    <h2>
+      Where to next?
+    </h2>
+    <p>
+      Get notified about the release of Pet Necrology on the app store!
+    </p>
+
+    <%= text_input :user, :name, value: "This is a prepopulated value" %>
+  </div>
 </div>
 
 
