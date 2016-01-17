@@ -15,12 +15,17 @@
 
 <div class="col-sm-12 features-section">
   <div class="row">
+    <div class="col-xs-12">
+      <div class="features-intro">
+        With the Pet Necrology app you can...
+      </div>
+    </div>
     <div class="col-sm-4">
       <div class="feature-img">
         <img src="/images/memorial_feature.png"/>
       </div>
       <p>
-        Create and share an everlasting digital memorial for your departed pet
+        create and share an everlasting digital memorial for your departed pet.
       </p>
     </div>
     <div class="col-sm-4">
@@ -28,7 +33,7 @@
         <img src="/images/filter_feature.png"/>
       </div>
       <p>
-        Filter pet obituaries by species and breed
+        browse pet obituaries by species and breed.
       </p>
     </div>
     <div class="col-sm-4">
@@ -36,7 +41,7 @@
         <img src="/images/find_feature.png"/>
       </div>
       <p>
-        Find caring pet cremation and burial services in your local area
+        find caring pet cremation and burial services in your local area.
       </p>
     </div>
   </div>
