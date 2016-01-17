@@ -10,8 +10,8 @@ defmodule PetObituary.User do
     timestamps
   end
 
-  @required_fields ~w(name email bio)
-  @optional_fields ~w(number_of_pets)
+  @required_fields ~w(email)
+  @optional_fields ~w(name number_of_pets bio)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -24,6 +24,6 @@ defmodule PetObituary.User do
     |> cast(params, @required_fields, @optional_fields)
     |> validate_length(:bio, min: 2)
     |> validate_length(:bio, max: 140)
-    |> validate_format(:email, ~r/@/)
+    |> validate_format(:email, ~r/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i)
   end
 end

@@ -21,10 +21,13 @@ defmodule PetObituary.UserController do
     case Repo.insert(changeset) do
       {:ok, _user} ->
         conn
-        |> put_flash(:info, "User created successfully.")
-        |> redirect(to: user_path(conn, :index))
+        |> put_flash(:info, "Email address submitted successfully!")
+        |> redirect(to: page_path(conn, :index))
       {:error, changeset} ->
-        render(conn, "new.html", changeset: changeset)
+        conn
+        |> put_flash(:info, "Email address format is invalid.")
+        |> redirect(to: page_path(conn, :index))
+        #render(conn, "new.html", changeset: changeset)
     end
   end
 

@@ -40,7 +40,11 @@ div[role=main] {
 	flex: 1;
 }
 
-
+.alert {
+	margin-bottom: 0;
+	border-radius: 0;
+	text-align: center;
+}
 header {
 	border-top: 9px solid #222222;
 }

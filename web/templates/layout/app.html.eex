@@ -14,6 +14,9 @@
 
   <body class="Site">
 
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
       <header>
         <div class="col-xs-6">
           <div class="circle">
@@ -33,10 +36,6 @@
           </div>
         </div>
       </header>
-
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main class="Site-content" role="main">
         <%= render @view_module, @view_template, assigns %>
