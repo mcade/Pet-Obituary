@@ -14,14 +14,26 @@
 </div>
 
 <div class="col-sm-12 features-section">
-  <h2>
-    Where to next?
-  </h2>
-  <p>
-    Get notified about the release of Pet Necrology on the app store!
-  </p>
-
-  <%= text_input :user, :name, value: "This is a prepopulated value" %>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Feature One</h2>
+      <p>
+        Get notified about the release of Pet Necrology on the app store!
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Feature Two</h2>
+      <p>
+        Get notified about the release of Pet Necrology on the app store!
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Feature Three</h2>
+      <p>
+        Get notified about the release of Pet Necrology on the app store!
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="col-xs-6 col-xs-push-6 email-section">

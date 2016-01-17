@@ -83,13 +83,16 @@ footer ul {
 }
 footer ul li {
 	line-height: inherit;
-	white-space: nowrap;
 	list-style: none;
 }
 
 footer h4 {
 	color: #fff;
 	font-weight: 500;
+}
+
+footer p {
+	white-space: nowrap;
 }
 
 .circle {
@@ -171,10 +174,9 @@ h1 {
 }
 
 .email-section .email-form {
-	background: rgba(35, 206, 235, 0.5);
+	background: rgba(35, 206, 235, 0.8);
   padding: 5px 5px 25px;
   text-align: center;
-  color: #191919;
   -webkit-box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
   box-shadow: 5px 0px 6px -2px rgba(0,0,0,0.75);
