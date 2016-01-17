@@ -25,5 +25,6 @@ defmodule PetObituary.User do
     |> validate_length(:bio, min: 2)
     |> validate_length(:bio, max: 140)
     |> validate_format(:email, ~r/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i)
+    |> unique_constraint(:email)
   end
 end
