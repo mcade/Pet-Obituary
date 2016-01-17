@@ -16,21 +16,27 @@
 <div class="col-sm-12 features-section">
   <div class="row">
     <div class="col-sm-4">
-      <h2>Feature One</h2>
+      <div class="feature-img">
+        <img src="/images/memorial_feature.png"/>
+      </div>
       <p>
-        Get notified about the release of Pet Necrology on the app store!
+        Create and share an everlasting digital memorial for your departed pet
       </p>
     </div>
     <div class="col-sm-4">
-      <h2>Feature Two</h2>
+      <div class="feature-img">
+        <img src="/images/filter_feature.png"/>
+      </div>
       <p>
-        Get notified about the release of Pet Necrology on the app store!
+        Filter pet obituaries by species and breed
       </p>
     </div>
     <div class="col-sm-4">
-      <h2>Feature Three</h2>
+      <div class="feature-img">
+        <img src="/images/find_feature.png"/>
+      </div>
       <p>
-        Get notified about the release of Pet Necrology on the app store!
+        Find caring pet cremation and burial services in your local area
       </p>
     </div>
   </div>
