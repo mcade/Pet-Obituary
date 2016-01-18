@@ -19,11 +19,8 @@
 
       <header>
         <div class="col-xs-6">
-          <div class="circle">
-            <br />
-            Pet
-            <br />
-            Necro
+          <div class="header-logo">
+            Pet Necrology
           </div>
         </div>
 

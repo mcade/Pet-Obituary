@@ -12,7 +12,11 @@ form.link, form.button {
   display: inline;
 }
 
-
+@font-face {
+  font-family: 'Duwhoers';
+  src: url('GraublauWeb.eot');
+  src: url('/fonts/duwhoers/duwhoers_brush.otf') format('opentype');
+}
 
 /* custom css */
 body {
@@ -99,27 +103,10 @@ footer p {
 	white-space: nowrap;
 }
 
-.circle {
-  font-weight:bold;
-  font-style: italic;
-  position: relative;
-  border-radius: 100%;
-  background: #f84342;
-  border: 1px solid #F7F7F7;
-  width: 80px;
-  height: 80px;
-  margin: 10px 10px;
-  text-align: center;
-  color: #FFF;
-  font-size: 10px;
-  line-height: 16px;
-  cursor: pointer;
-  transform:rotate(11deg);
-  -ms-transform:rotate(11deg); /* IE 9 */
-  -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight:200;
-  font-size:16px;
+.header-logo {
+  color: rgb(51, 51, 51, .75);
+  font-family: "Duwhoers";
+  font-size: 72px;
 }
 
 .clear {
