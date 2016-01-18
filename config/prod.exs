@@ -2,7 +2,8 @@ use Mix.Config
 
 config :pet_obituary, PetObituary.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "petobituary.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "petnecrology.herokuapp.com", port: 443],
+force_ssl: [rewrite_on: [:x_forwarded_proto]],
 	force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE")
