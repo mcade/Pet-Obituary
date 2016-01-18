@@ -49,30 +49,41 @@
 
 <div class="col-xs-6 col-xs-push-6 email-section">
   <div class="email-form">
-    <h2>
-      Where to next?
-    </h2>
-    <p>
-      Get notified about the release of Pet Necrology on the app store!
-    </p>
+    <div>
+      <%= if @conn.cookies["has_signed_up"] == "has_signed_up" do %>
+        <h2>
+          Thanks for signing up!
+        </h2>
+        <p>
+          You'll be among the first to know when Pet Necrology launches.</br>
+          Share with your friends in the meantime.
+        </p>
+      <% else %>
+        <h2>
+          Where to next?
+        </h2>
+        <p>
+          Get notified about the release of Pet Necrology on the app store!
+        </p>
 
-    <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
-      <%= if @changeset.action do %>
-        <div class="alert alert-danger">
-          <p>Oops, something went wrong! Please check the errors below.</p>
-        </div>
+        <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
+          <%= if @changeset.action do %>
+            <div class="alert alert-danger">
+              <p>Oops, something went wrong! Please check the errors below.</p>
+            </div>
+          <% end %>
+
+          <div class="form-group">
+            <%= text_input f, :email, class: "form-control", placeholder: "enter email address" %>
+            <%= error_tag f, :email %>
+          </div>
+
+          <div class="form-group">
+            <%= submit "Submit", class: "btn btn-primary" %>
+          </div>
+        <% end %>
       <% end %>
-
-      <div class="form-group">
-        <%= label f, :email, class: "control-label" %>
-        <%= text_input f, :email, class: "form-control" %>
-        <%= error_tag f, :email %>
-      </div>
-
-      <div class="form-group">
-        <%= submit "Submit", class: "btn btn-primary" %>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>
 

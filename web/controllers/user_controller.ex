@@ -21,6 +21,7 @@ defmodule PetObituary.UserController do
     case Repo.insert(changeset) do
       {:ok, _user} ->
         conn
+        |> put_resp_cookie("has_signed_up", "has_signed_up", max_age: 24*60*60)
         |> put_flash(:info, "Email address submitted successfully")
         |> redirect(to: page_path(conn, :index))
       {:error, changeset} ->
