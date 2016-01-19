@@ -1,4 +1,4 @@
-<a name="app-info"></a> 
+<a name="app-info" id="app-info"></a> 
 <div class="col-sm-12 page-content">
   <h3>
     <span>BRING TO MIND No. 1</span>
@@ -47,8 +47,8 @@
     </div>
   </div>
 </div>
-<a name="email-signup"></a> 
 <div class="col-xs-6 col-xs-push-6 email-section">
+  <a name="email-signup" id="email-signup"></a> 
   <div class="email-form">
     <div>
       <%= if @conn.cookies["has_signed_up"] == "has_signed_up" do %>

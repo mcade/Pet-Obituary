@@ -26,21 +26,20 @@
             <h2>
               Heartfelt biographies of departed animals
             </h2>
-            <a href="#app-info" class="arrow bounce">
+            <a data-scroll href="#app-info" class="arrow bounce">
             </a>
           </div>
         </div>
 
-        <div class="col-xs-12 text-right">
+        <div class="col-xs-12 text-center">
           <div id="header-links">
-            <a href="#email-signup">
+            <a data-scroll href="#email-signup">
               coming to
               <img src="/images/ios_and_android.png" />
             </a>
           </div>
         </div>
       </header>
-
       <main class="Site-content" role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
@@ -92,5 +91,8 @@
       </footer>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>
+      smoothScroll.init();
+    </script>
   </body>
 </html>
