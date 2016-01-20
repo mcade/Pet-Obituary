@@ -13,33 +13,33 @@
   </head>
 
   <body class="Site">
-
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <header>
-        <div class="col-xs-12">
-          <div class="header-logo">
-            <h1>
-              Pet Necrology
-            </h1>
-            <h2>
-              Heartfelt biographies of departed animals
-            </h2>
-            <a data-scroll href="#app-info" class="arrow bounce">
-            </a>
+      <div class="above-fold-section">
+        <header>
+          <div class="col-xs-12">
+            <div class="header-logo">
+              <h1>
+                Pet Necrology
+              </h1>
+              <h2>
+                Heartfelt biographies of departed animals
+              </h2>
+              <a data-scroll href="#app-info" class="arrow bounce">
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="col-xs-12 text-center">
-          <div id="header-links">
-            <a data-scroll href="#email-signup">
-              coming to
-              <img src="/images/ios_and_android.png" />
-            </a>
+          <div class="col-xs-12 text-center">
+            <div id="header-links">
+              <a data-scroll href="#email-signup">
+                coming to
+                <img src="/images/ios_and_android.png" />
+              </a>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <main class="Site-content" role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
