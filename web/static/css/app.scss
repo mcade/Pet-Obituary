@@ -347,6 +347,9 @@ h1 {
 
 /* mobile device styles */
 @media screen and (max-width: 768px) {
+	.above-fold-section, .email-form-body {
+		background-attachment: scroll;
+	}
 	.header-logo {
 		h1 {
     	font-size: 40px;
