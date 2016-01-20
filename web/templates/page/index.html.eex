@@ -48,9 +48,9 @@
   </div>
 </div>
 <div class="col-xs-12">
+  <a name="email-signup" id="email-signup"></a> 
   <div class="row email-form-body">
     <div class="col-xs-6 col-xs-push-6 email-section">
-      <a name="email-signup" id="email-signup"></a> 
       <div class="email-form">
         <div>
           <%= if @conn.cookies["has_signed_up"] == "has_signed_up" do %>
@@ -62,7 +62,7 @@
             </p>
           <% else %>
             <h2>
-              Where to next?
+              Commemorate a life you treasured.
             </h2>
             <p>
               Get notified about the release of Pet Necrology on iOS and Android!
