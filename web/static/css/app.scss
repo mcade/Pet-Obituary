@@ -27,10 +27,10 @@ body {
 	font-family: 'Roboto Slab', serif;
 
   background-image: url("/images/watching_dog_bg.jpg");
-  background-position: 25%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #464646;
+  background-position: 25%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -351,6 +351,12 @@ h1 {
 
 /* mobile device styles */
 @media screen and (max-width: 768px) {
+	.body {
+		-webkit-background-size: auto 600px;
+	  -moz-background-size: auto 600px;
+	  -o-background-size: auto 600px;
+	  background-size: auto 600px;
+	}
 	.header-logo {
 		h1 {
     	font-size: 60px;
@@ -399,4 +405,13 @@ h1 {
   .page-content h1 {
   	margin-top: 10px;
   }
+}
+
+@media screen and (max-height: 600px) {
+	.header-logo h2 {
+		line-height: 20px;
+	}
+	#header-links {
+		margin-top: 220px;
+	}
 }
