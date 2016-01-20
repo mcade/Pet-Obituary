@@ -47,51 +47,55 @@
     </div>
   </div>
 </div>
-<div class="col-xs-6 col-xs-push-6 email-section">
-  <a name="email-signup" id="email-signup"></a> 
-  <div class="email-form">
-    <div>
-      <%= if @conn.cookies["has_signed_up"] == "has_signed_up" do %>
-        <h2>
-          Thanks for signing up!
-        </h2>
-        <p>
-          You'll be among the first to know when Pet Necrology launches.
-        </p>
-      <% else %>
-        <h2>
-          Where to next?
-        </h2>
-        <p>
-          Get notified about the release of Pet Necrology on the app store!
-        </p>
+<div class="col-xs-12">
+  <div class="row email-form-body">
+    <div class="col-xs-6 col-xs-push-6 email-section">
+      <a name="email-signup" id="email-signup"></a> 
+      <div class="email-form">
+        <div>
+          <%= if @conn.cookies["has_signed_up"] == "has_signed_up" do %>
+            <h2>
+              Thanks for signing up!
+            </h2>
+            <p>
+              You'll be among the first to know when Pet Necrology launches.
+            </p>
+          <% else %>
+            <h2>
+              Where to next?
+            </h2>
+            <p>
+              Get notified about the release of Pet Necrology on iOS and Android!
+            </p>
 
-        <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
-          <%= if @changeset.action do %>
-            <div class="alert alert-danger">
-              <p>Oops, something went wrong! Please check the errors below.</p>
-            </div>
+            <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
+              <%= if @changeset.action do %>
+                <div class="alert alert-danger">
+                  <p>Oops, something went wrong! Please check the errors below.</p>
+                </div>
+              <% end %>
+
+              <div class="form-group">
+                <%= text_input f, :email, class: "form-control", placeholder: "enter email address" %>
+                <%= error_tag f, :email %>
+              </div>
+
+              <div class="form-group">
+                <%= submit "Submit", class: "btn-email-submit" %>
+              </div>
+            <% end %>
           <% end %>
-
-          <div class="form-group">
-            <%= text_input f, :email, class: "form-control", placeholder: "enter email address" %>
-            <%= error_tag f, :email %>
+          <div class="share-url">
+            <h4>Share this page with other pet lovers!</h4>
+            <ul class="social-share-btn-list">
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u=petnecrology.com"><img src="/images/facebook_share_icon.png"/></a></li>
+              <li><a href="https://twitter.com/home?status=petnecrology.com" target="_blank"><img src="/images/twitter_share_icon.png"/></a></li>
+              <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=petnecrology.com&title=Pet%20Necrology%3A%20Biographies%20of%20Beloved%20Animals&summary=Discover%20heartfelt%20stories%20of%20departed%20pets.&source="/><img src="/images/linkedin_share_icon.png"/></a></li>
+              <li><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fpetnecrology.com" target="_blank"><img src="/images/tumblr_share_icon.png"/></a></li>
+              <li><a href="https://plus.google.com/share?url=petnecrology.com" target="_blank"><img src="/images/google_share_icon.png"/></a></li>
+            </ul>
           </div>
-
-          <div class="form-group">
-            <%= submit "Submit", class: "btn-email-submit" %>
-          </div>
-        <% end %>
-      <% end %>
-      <div class="share-url">
-        <h4>Share this page with other pet lovers!</h4>
-        <ul class="social-share-btn-list">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=petnecrology.com"><img src="/images/facebook_share_icon.png"/></a></li>
-          <li><a href="https://twitter.com/home?status=petnecrology.com" target="_blank"><img src="/images/twitter_share_icon.png"/></a></li>
-          <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=petnecrology.com&title=Pet%20Necrology%3A%20Biographies%20of%20Beloved%20Animals&summary=Discover%20heartfelt%20stories%20of%20departed%20pets.&source="/><img src="/images/linkedin_share_icon.png"/></a></li>
-          <li><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fpetnecrology.com" target="_blank"><img src="/images/tumblr_share_icon.png"/></a></li>
-          <li><a href="https://plus.google.com/share?url=petnecrology.com" target="_blank"><img src="/images/google_share_icon.png"/></a></li>
-        </ul>
+        </div>
       </div>
     </div>
   </div>

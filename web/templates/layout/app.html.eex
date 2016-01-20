@@ -81,7 +81,7 @@
                 92 Lenora St<br>
                 Seattle, WA 98121<br>
               </p>
-              <p>
+              <p class="contact_us_emails">
                 Licensed veterinarians: <a href="mailto:vets@petnecrology.com?Subject=Vet" target="_top">vets@petnecrology.com</a></br>
                 For all other inquiries: <a href="mailto:info@petnecrology.com?Subject=Hello" target="_top">info@petnecrology.com</a>
               </p>
