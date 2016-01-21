@@ -29,8 +29,7 @@
           </div>
 
           <div class="col-xs-12 text-center">
-            <a data-scroll href="#app-info" class="arrow bounce">
-            </a>
+            <a data-scroll href="#app-info" class="arrow bounce"></a>
             <div id="header-links">
               <a data-scroll href="#email-signup">
                 coming to
