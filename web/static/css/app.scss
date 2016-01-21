@@ -162,10 +162,13 @@ header {
 }
 
 footer {
-  padding: 50px 30px;
+  padding: 0 30px 50px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   color: #9b9b9b;
   background-color: #323234;
+}
+#footer-links {
+	margin-top: 50px;
 }
 footer a {
   color: #78767c;
@@ -419,6 +422,9 @@ h1 {
 	}
 }
 @media screen and (max-width: 450px) {
+	header {
+		border-top: none;
+	}
 	.header-logo h2 {
     font-size: 16px;
     margin-top: 30px;
