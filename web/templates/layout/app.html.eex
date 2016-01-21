@@ -90,6 +90,7 @@
       </footer>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>require("web/static/js/app").App.run()</script>
     <script>
       smoothScroll.init();
     </script>
