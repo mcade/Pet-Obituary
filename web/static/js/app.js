@@ -3,6 +3,8 @@ import "babel-polyfill"
 
 import { Quote } from "./quote_generator";
 
+
+
 export var App = {
   run: function(){
     Quote.generate()

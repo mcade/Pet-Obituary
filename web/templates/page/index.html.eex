@@ -12,6 +12,14 @@
     – Anatole France
   </h2>
 
+  <div id="quoteContainer">
+    <p>Some old quote</p>
+    <p id="quoteGenius">by a guy</p>      
+  </div>
+  <div id="buttonContainer">
+    <button href="#" id="quoteButton">Quote Me</button>
+  </div>
+
 </div>
 
 <div class="col-sm-12 features-section">
