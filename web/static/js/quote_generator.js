@@ -1,29 +1,34 @@
 import { quoteSource } from "./quotes";
 
 export var Quote = {
-  generate: function(){	
-  	let sourceLength = quoteSource.length;
+  generate: () => {	
+    var uniqueQuotes = quoteSource.slice();
+    var i = 0;
+    uniqueQuotes.sort(() => { return 0.5 - Math.random() });
   	function* new_quote() {
-  		let randomNumber = Math.floor(Math.random()*sourceLength);
-  		yield quoteSource[randomNumber].quote;
-  		yield quoteSource[randomNumber].name;
-  		yield* new_quote();
+      try {
+        yield uniqueQuotes[i].quote;
+        yield uniqueQuotes[i].name;
+        yield* new_quote(i++);
+      }
+      catch(err) {
+        console.log("Reshuffle uniqueQuotes array");
+        uniqueQuotes.sort(() => { return 0.5 - Math.random() });
+        i = 0;
+        yield* new_quote(i);
+      }
   	}
 
   	var iter = new_quote(quoteSource);
 
   	$("#quoteButton").click(event => {
 			let newQuoteText = iter.next().value;
-			let newQuoteGenius = iter.next().value;
-      let timeAnimation = 500;
+			let newQuoteAuthor = iter.next().value;
       let quoteContainer = $('#quoteContainer');
-      //fade out animation with callback
-      quoteContainer.fadeOut(timeAnimation, function(){
+      quoteContainer.fadeOut(500, () => {
         quoteContainer.html('');
-				quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteGenius">'+'-								'+newQuoteGenius+'</p>');
-        
-        //fadein animation.
-        quoteContainer.fadeIn(timeAnimation);
+				quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteAuthor">'+'- '+newQuoteAuthor+'</p>');
+        quoteContainer.fadeIn(500);
       });  
 		});  	
   }
