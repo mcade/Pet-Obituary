@@ -219,7 +219,7 @@ hr {
 
 #quoteContainer h3 {
 	text-align: center;
-	line-height: 50px;
+	line-height: 2;
 	max-width: 800px;
   span.intro-quote-tail {
   	font-weight: 500;
@@ -413,23 +413,16 @@ h1 {
   	margin-top: 275px;
   	margin-bottom: 15px;
   }
-  .page-content {
-  	h3 {
-  		font-size: 20px;
-  		span {
-  			font-size: 16px;
-  			display: block;
-		    margin-top: -12px;
-		    margin-bottom: 12px;
-  		}
-  	}
-  	h1 {
-  		font-size: 32px;
-  	}
-  	h2 {
-  		font-size: 22px;
-  	}
+  #quoteContainer h3 {
+  	font-size: 20px;
   }
+  .author {
+  	font-size: 16px;
+  }
+  .quote-number {
+  	font-size: 16px;
+  }
+
   .features-section {
   	padding-top: 40px;
   	padding-bottom: 40px;
@@ -443,6 +436,9 @@ h1 {
 
 }
 @media screen and (max-width: 600px) {
+	#quoteContainer h3 {
+		line-height: 1.5;
+	}
 	.email-section {
 		margin-top: 50px;
 	}
