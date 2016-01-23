@@ -260,7 +260,8 @@ h1 {
   	color: #fff;
 		border-radius: 17px;
 		outline: none;
-		padding: 2px 0;
+		padding: 4px 2px;
+    border: solid 2px #C0C0C0;
 		&:active {
 			background: #008cdd;
 		}
@@ -439,7 +440,10 @@ h1 {
   	font-size: 16px;
   }
   .quote-number {
-  	font-size: 16px;
+  	font-size: 12px;
+  	img {
+  		height: 20px;
+  	}
   }
 
   .features-section {
