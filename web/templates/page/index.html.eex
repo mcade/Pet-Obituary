@@ -16,7 +16,7 @@
 <div class="quote-number">
   BRING TO MIND ANOTHER QUOTE
   <div id="buttonContainer">
-    <button href="#" id="quoteButton"><img src="/images/gen_icon2.png"/></button>
+    <button href="#" id="quoteButton"><img id="gen-cycle-icon" src="/images/gen_icon2.png"/></button>
   </div>
 </div>
 

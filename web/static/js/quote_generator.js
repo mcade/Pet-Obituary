@@ -22,6 +22,7 @@ export var Quote = {
   	var iter = new_quote(quoteSource);
 
   	$("#quoteButton").click(event => {
+      $("#gen-cycle-icon").toggleClass("down")  ; 
 			let newQuoteText = iter.next().value;
 			let newQuoteAuthor = iter.next().value;
       let quoteContainer = $('#quoteContainer');

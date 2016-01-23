@@ -260,9 +260,7 @@ h1 {
   	color: #fff;
 		border-radius: 17px;
 		outline: none;
-		&:hover {
-			background: #008cdd;
-		}
+		padding: 2px 0;
 		&:active {
 			background: #008cdd;
 		}
@@ -272,6 +270,20 @@ h1 {
 		}
   }
 }
+
+#gen-cycle-icon {
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#gen-cycle-icon.down{
+  -ms-transform:rotate(720deg);
+  -moz-transform:rotate(720deg);
+  -webkit-transform:rotate(720deg);
+  transform:rotate(720deg);
+}
+
 .page-content {
   margin: 0;
 	background-color: #eee;
@@ -396,7 +408,14 @@ h1 {
 	}
 }
 
-/* mobile device styles */
+/* desktop only styles */
+@media screen and (min-width: 769px) {
+	#buttonContainer button:hover {
+		background: #008cdd;
+	}
+}
+
+/* mobile only styles */
 @media screen and (max-width: 768px) {
 	.above-fold-section, .email-form-body {
 		background-attachment: scroll;
