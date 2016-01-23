@@ -191,6 +191,7 @@ footer ul li {
 footer h4 {
 	color: #fff;
 	font-weight: 500;
+	margin-top: 50px;
 }
 
 footer p {
@@ -208,11 +209,21 @@ hr {
   margin:0;
 }
 
-h3 span {
-  color: #ddd;
-  font-size: 20px;
-  font-weight:700;
-  padding-right:30px;
+#quoteContainer {
+	height: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#quoteContainer h3 {
+	text-align: center;
+	line-height: 50px;
+	max-width: 800px;
+  span.intro-quote-tail {
+  	font-weight: 500;
+  }
 }
 
 h3 {
@@ -225,6 +236,42 @@ h1 {
   font-weight:700;
 }
 
+.quote-number {
+	color: #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  background: #eee;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.author {
+	width: 100%;
+	max-width: 800px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #777;
+}
+
+#buttonContainer {
+	display: inline;
+  margin-left: 7px;
+  button {
+  	color: #fff;
+		border-radius: 17px;
+		outline: none;
+		&:hover {
+			background: #008cdd;
+		}
+		&:active {
+			background: #008cdd;
+		}
+		img {
+			max-height: 28px;
+    	vertical-align: bottom;
+		}
+  }
+}
 .page-content {
   margin: 0;
 	background-color: #eee;

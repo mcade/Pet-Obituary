@@ -26,10 +26,11 @@ export var Quote = {
 			let newQuoteAuthor = iter.next().value;
       let quoteContainer = $('#quoteContainer');
       quoteContainer.fadeOut(500, () => {
-        quoteContainer.html('');
-				quoteContainer.append('<p>'+newQuoteText+'</p>'+'<p id="quoteAuthor">'+'- '+newQuoteAuthor+'</p>');
+        quoteContainer.html('');        
+        quoteContainer.append(`<h3>${newQuoteText}</h3><div class="author text-right">${newQuoteAuthor}</div>`);
         quoteContainer.fadeIn(500);
       });  
 		});  	
   }
 }
+
