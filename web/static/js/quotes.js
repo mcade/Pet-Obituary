@@ -1,6 +1,6 @@
 export var quoteSource=[
   {
-  	quote:"Until one has loved an animal, a part of one's soul remains un-awakened.",
+  	quote:"Until one has loved an animal, a part of one's soul remains unawakened.",
   	name:"– Anatole France"
   },
 	{
@@ -36,7 +36,7 @@ export var quoteSource=[
   	name:"– Rudyard Kipling"
   },
   {
-  	quote:"Love the animals: God has given them the rudiments of thought and joy untroubled",
+  	quote:"Love the animals: God has given them the rudiments of thought and joy untroubled.",
   	name:"– Fyodor Dostoyevsky"
   },
   {

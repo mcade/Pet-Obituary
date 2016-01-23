@@ -71,7 +71,7 @@
               Commemorate a life you treasured.
             </h2>
             <p>
-              Get notified about the release of Pet Necrology on iOS and Android!
+              Get notified about the release of Pet Necrology on iOS and Android
             </p>
 
             <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
